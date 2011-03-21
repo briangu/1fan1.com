@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/stylesheets/global.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/javascripts/mootools-1.2.4-core-yc.js">
+	</script>
+	<script type="text/javascript" src="/javascripts/cache.js">
+	</script>
+	<script type="text/javascript" src="/javascripts/main.js">
+	</script>
+	<script type="text/javascript" src="http://www.google.com/jsapi">
+	</script>
+	<script type="text/javascript">
+	google.load("language", "1");
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16386031-1']);
+_gaq.push(['_trackPageview']);
+
+(function(){
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<div class="mainbody">
+
+	<div id="header">
+		<div id="logo">
+			1fan1.com (易翻译) Easy (Chinese-English) Translation
+		</div>
+	</div>
+
+	<div class="spacer">
+		&nbsp;
+	</div>
+
+	<form>
+		<table class="formtable">
+			<tr valign="top">
+				<td valign="top" height="100%">
+                    <textarea name="inputArea" id="inputArea" rows="10" cols="60">
+Enter Chinese text here (写在这儿) to read or translate.
+
+To translate, simply selected text or move the cursor to the start of a phrase and it will be automatically translated.  
+
+The dictionary looks up the next phrase (which may be auto-highlighted) starting at the current position or selection.  Google translate is used to translate the selected text or found phrase.</textarea>
+                </td>
+				<td valign="top" width="100%" rowspan="3">
+                    <div class="titleBar">Dictionary</div>
+					<div valign="top" id="segProgress" class="hidden">
+                        <img src="/images/loading.gif"/>
+                    </div>
+					<div valign="top" id="gallery" class="unhidden">
+						<table>
+							<tr>
+								<td valign="top">
+									<div class="charseg">
+										<div class="hanzi">
+											翻
+											<div class="pinyin">
+												fan1
+											</div>
+										</div>
+									</div>
+									<div class="charseg">
+										<div class="hanzi">
+											译
+											<div class="pinyin">
+												yi4
+											</div>
+										</div>
+									</div>
+								</td>
+								<td valign="top">
+									<table>
+										<tr>
+											<td>
+												<div class="translation1">
+													to translate
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													to interpret
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													translator
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													interpreter
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													translation
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													interpretation
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													CL:個|个[ge4],位[wei4],名[ming2]
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" colspan="2">
+									<hr>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top">
+									<div class="charseg">
+										<div class="hanzi">
+											翻
+											<div class="pinyin">
+												fan1
+											</div>
+										</div>
+									</div>
+								</td>
+								<td valign="top">
+									<table>
+										<tr>
+											<td>
+												<div class="translation1">
+													to turn over
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													to flip over
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													to overturn
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													to translate
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													to decode
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													to double
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation1">
+													to climb over or into
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="translation0">
+													to cross
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td valign="top" align="right">
+                    <label for="highlightcb">Auto-Highlight</label> <input
+                    type="checkbox" id="highlightcb" name="highlightcb" 
+                    value="highlight" CHECKED/>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td valign="top" align="left">
+                    <div class="titleBar">Translation</div>
+					<div id="transProgress" class="hidden">
+						<img src="/images/loading.gif"/>
+                    </div>
+					<div id="transArea" name="translation" class="hidden"></div>
+				</td>
+			</tr>
+		</table>
+	</form>	
+	<div class="push"></div>
+</div>
+
+<div class="footer">
+	<span style="float:left">
+	Assisted translation between Chinese and English using fast <a 
+	href="http://en.wikipedia.org/wiki/Text_segmentation">segmentation</a>, a 
+    great <a 
+    href="http://www.mdbg.net/chindict/chindict.php?page=cedict">dictionary</a>, 
+    and Google <a href="http://translate.google.com">translate</a>. 
+	</span> Copyright 2010 <a href="http://www.ops5.com">OPS5 Limited</a> <a
+	href="mailto:1fan1@ops5.com">contact</a>
+</div>
+
+</body>
+</html>
+
